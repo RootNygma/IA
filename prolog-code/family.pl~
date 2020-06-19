@@ -1,0 +1,6 @@
+father(john,paul).
+father(jim,andrew).
+father(john,bill).
+cousin(X,Y):- father(Z, X), father(K,Y).
+brother(X,Y):- father(Z, X), father(Z,Y).
+brother(X,Y):- X/=Y.
